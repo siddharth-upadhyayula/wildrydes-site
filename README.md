@@ -2,6 +2,10 @@ AWS Integration in WildRydes Application
 
 The application incorporates AWS services for backend logic, user authentication, data storage, and possibly other features like mapping and analytics. Here’s how AWS fits into the application:
 
+
+<img width="1331" alt="Screenshot 2025-01-08 at 12 35 56 PM" src="https://github.com/user-attachments/assets/eb5922cf-6f83-41f8-a091-29f9e1aeb346" />
+
+
 1. AWS Lambda
 	•	Files: aws/lambda.js, aws/lambdaTest.js
 	•	Purpose: Implements serverless backend logic. The Lambda functions likely handle:
