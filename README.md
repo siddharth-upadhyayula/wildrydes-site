@@ -53,6 +53,7 @@ A web application that allows users to register, sign in, and book magical unico
 
 Directory Structure
 
+```
 siddharth-upadhyayula-wildrydes-site/
 ├── README.md
 ├── HTML Files: Core web pages (apply, FAQ, register, etc.)
@@ -61,30 +62,31 @@ siddharth-upadhyayula-wildrydes-site/
 ├── fonts/: Font resources.
 ├── images/: Image assets.
 ├── js/: Core scripts, including AWS Cognito integration and mapping features.
+```
 
 Prerequisites
 	1.	AWS Account: Ensure you have an AWS account with access to:
-	•	Lambda
-	•	API Gateway
-	•	Cognito
-	•	DynamoDB
-	•	S3
-	•	CloudFront
+		•	Lambda
+		•	API Gateway
+		•	Cognito
+		•	DynamoDB
+		•	S3
+		•	CloudFront
 	2.	Node.js: Install for local testing of Lambda functions.
 	3.	Mapbox Account: Required for mapping functionality.
 
 Setup Instructions
-	1.	Clone the Repository:
+1.	Clone the Repository:
  
 ```
 git clone https://github.com/siddharth-upadhyayula/wildrydes-site.git
 cd siddharth-upadhyayula-wildrydes-site
 ```
 
-	2.	Frontend Setup:
+2.	Frontend Setup:
 	•	Update config.js with your AWS Cognito pool ID, API Gateway URL, and Mapbox token.
 	•	Host HTML and CSS files on S3 or a local development server.
-	3.	AWS Lambda Deployment:
+3.	AWS Lambda Deployment:
 	•	Zip lambda.js and its dependencies.
 	•	Deploy the zip file via the AWS Lambda console or CLI:
  
@@ -97,13 +99,13 @@ aws lambda create-function \
     --zip-file fileb://lambda.zip
 ```
 
-	4.	API Gateway:
+4.	API Gateway:
 	•	Create a REST API and link it to the Lambda function.
 	•	Define endpoints for ride booking, user verification, etc.
-	5.	AWS Cognito:
+5.	AWS Cognito:
 	•	Set up a user pool in AWS Cognito.
 	•	Configure the pool ID in cognito-auth.js.
-	6.	Run Locally:
+6.	Run Locally:
 	•	Open index.html in a browser for the homepage.
 
 Key Features
